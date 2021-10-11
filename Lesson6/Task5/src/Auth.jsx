@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LogIn from './Login.jsx';
-import LogOut from './Logout.jsx';
+import Login from './Login.jsx';
+import Logout from './Logout.jsx';
 import Spinner from './Spinner.jsx';
 
 //in:props(obj)
@@ -37,9 +37,9 @@ class Auth extends Component {
       return <Spinner size={100} />;
     }
     return this.state.isLogin ? (
-      <LogOut onLogout={this.showLogin} />
+      <Logout onLogout={this.showLogin} />
     ) : (
-      <LogIn onLogin={this.hideLogin} />
+      <Login onLogin={this.hideLogin} />
     );
   }
 }
