@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Greating from './Greating.jsx';
+import Logout from './Logout.jsx'
+import Login from './Login.jsx'
 
 class Auth extends Component {
   constructor(props) {
@@ -44,13 +46,9 @@ class Auth extends Component {
         <Greating isLoggedIn={this.state.isLoggedIn} />
         <div>
           {this.state.isLoggedIn ? (
-            <button className="logout btn" onClick={this.logOut}>
-              Log out
-            </button>
+            <Logout onLogout={this.logOut} />
           ) : (
-            <button className="login btn" onClick={this.logIn}>
-              Login
-            </button>
+          <Login onLogin={this.logIn}/>
           )}
         </div>
       </div>
