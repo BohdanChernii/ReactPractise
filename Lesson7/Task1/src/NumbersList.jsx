@@ -1,12 +1,12 @@
 import React from 'react';
 
-function NumbersList({ numberList }) {
+function NumbersList({ numbers }) {
   return (
-    <ol>
-      {numberList.map(num => (
+    <ul>
+      {numbers.map(num => (
         <li key={num}>{num}</li>
       ))}
-    </ol>
+    </ul>
   );
 }
 export default NumbersList;
