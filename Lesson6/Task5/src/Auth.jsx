@@ -23,8 +23,8 @@ class Auth extends Component {
   onLogin = () => {
     this.setState({ showSpiner: true });
     setTimeout(() => {
-      this.setState({ isLogin: true });
-      this.setState({ showSpiner: false });
+      this.setState({ showSpiner: false});
+      this.setState({ isLogin: true  });
     }, 2000);
   };
 
