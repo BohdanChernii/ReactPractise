@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Greating from './Greating.jsx';
+import Greeting from './Greeting.jsx';
 import Logout from './Logout.jsx'
 import Login from './Login.jsx'
 
@@ -43,7 +43,7 @@ class Auth extends Component {
 
     return (
       <div className="panel">
-        <Greating isLoggedIn={this.state.isLoggedIn} />
+        <Greeting isLoggedIn={this.state.isLoggedIn} />
         <div>
           {this.state.isLoggedIn ? (
             <Logout onLogout={this.logOut} />

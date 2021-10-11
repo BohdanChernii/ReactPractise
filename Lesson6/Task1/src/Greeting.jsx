@@ -1,13 +1,13 @@
 import React from 'react';
 
-import UserGreating from './UserGreating.jsx';
+import UserGreeting from './UserGreeting.jsx';
 import GuestGreeting from './GuestGreeting.jsx';
 
-const Greating = props => {
+const Greeting = props => {
   if (props.isLoggedIn) {
-    return <UserGreating />;
+    return <UserGreeting />;
   }
   return <GuestGreeting />;
 };
 
-export default Greating;
+export default Greeting;
