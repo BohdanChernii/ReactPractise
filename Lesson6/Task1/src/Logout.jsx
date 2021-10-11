@@ -4,7 +4,7 @@ function Logout ({onLogout}) {
 
     return (
         <button className="logout btn" onClick={onLogout}>
-        Log out
+        Logout
       </button>
     )
 }
