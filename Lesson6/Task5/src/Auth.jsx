@@ -20,7 +20,7 @@ class Auth extends Component {
     };
   }
 
-  hideLogin = () => {
+  onLogin = () => {
     this.setState({ showSpiner: true });
     setTimeout(() => {
       this.setState({ isLogin: true });
@@ -28,7 +28,7 @@ class Auth extends Component {
     }, 2000);
   };
 
-  showLogin = () => {
+  onLogout = () => {
     this.setState({ isLogin: false });
   };
 
@@ -37,9 +37,9 @@ class Auth extends Component {
       return <Spinner size={100} />;
     }
     return this.state.isLogin ? (
-      <Logout onLogout={this.showLogin} />
+      <Logout onLogout={this.onLogout} />
     ) : (
-      <Login onLogin={this.hideLogin} />
+      <Login onLogin={this. onLogin} />
     );
   }
 }
