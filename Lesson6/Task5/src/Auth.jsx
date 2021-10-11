@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LogIn from './LogIn.jsx';
-import LogOut from './LogOut.jsx';
+import LogIn from './Login.jsx';
+import LogOut from './Logout.jsx';
 import Spinner from './Spinner.jsx';
 
 //in:props(obj)
