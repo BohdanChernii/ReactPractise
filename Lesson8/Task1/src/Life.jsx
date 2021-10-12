@@ -4,7 +4,7 @@ class Life extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      constructor: console.log('constructor:good place to create state'),
+      constructor: console.log('constructor: good place to create state'),
     };
   }
 
