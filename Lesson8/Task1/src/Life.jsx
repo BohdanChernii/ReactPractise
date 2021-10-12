@@ -9,11 +9,7 @@ class Life extends Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount:API calls, subscribe');
-  }
-
-  componentWillUnmount() {
-    console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
+    console.log('componentDidMount: API calls, subscriptions');
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -24,7 +20,9 @@ class Life extends Component {
     console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
   }
 
-
+  componentWillUnmount() {
+    console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
+  }
 
   render() {
     console.log('return React element to build DOM')
