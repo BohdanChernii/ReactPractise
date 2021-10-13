@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM  from "react-dom";
-import Life from "./Life.jsx"
+import App from "./App.jsx"
+import "./index.scss"
 
 const root = document.querySelector('#root')
-ReactDOM.render( <Life />, root)
+ReactDOM.render( <App />, root)
