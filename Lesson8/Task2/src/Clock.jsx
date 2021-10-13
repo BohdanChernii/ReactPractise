@@ -39,13 +39,16 @@ class Clock extends Component {
 
 componentDidMount(){
 
-  setInterval(() => {
+  this.interval = setInterval(() => {
     this.setState({
       date : getTimeWithOffset(this.props.offset).toLocaleTimeString()
     })
   },1000)
 }
 
+componentWillUnmount(){
+  clearInterval(this.interval)
+}
   render() {
     return (
       <>
