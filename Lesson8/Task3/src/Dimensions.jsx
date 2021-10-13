@@ -12,6 +12,7 @@ class Dimensions extends Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.onResize);
+    document.title = `${this.state.width} x ${this.state.height}`
   }
 
   componentWillUnmount() {
