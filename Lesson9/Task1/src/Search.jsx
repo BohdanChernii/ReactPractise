@@ -17,6 +17,10 @@ class Search extends Component {
     alert(`Search text: ${this.state.value}`);
   };
 
+  clean = () => {
+    this.setState({ value:''})
+  }
+
   render() {
     return (
       <form className="search" onSubmit={this.search}>
@@ -26,7 +30,7 @@ class Search extends Component {
           value={this.state.value}
           className="search__input"
         />
-        <button className="search__button" type="submit">
+        <button className="search__button" type="submit" onClick={this.clean}>
           Search
         </button>
       </form>
