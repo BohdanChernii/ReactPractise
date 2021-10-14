@@ -16,7 +16,7 @@ class ConnectionStatus extends Component {
 
   setOfflineStatus = () => {
     this.setState({
-      status: 'Offline',
+      status: 'offline',
     });
   };
 
