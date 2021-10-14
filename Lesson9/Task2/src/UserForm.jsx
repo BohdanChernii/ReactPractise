@@ -21,14 +21,14 @@ class UserForm extends Component {
     });
   };
 
-  handleSubmit = event => {
-    event.preventDefault();
-    console.log(this.state);
-  };
+  // handleSubmit = event => {
+  //   event.preventDefault();
+  //   console.log(this.state);
+  // };
 
   render() {
     return (
-      <form className="login-form" onSubmit={this.handleSubmit}>
+      <form className="login-form" onSubmit={this.props.onSubmit(this.state)}>
         <h1 className="form-title">Profile</h1>
         <div className="form-control">
           <label className="form-label" htmlFor="name">
@@ -68,7 +68,7 @@ class UserForm extends Component {
           >
             <option value="london">London</option>
             <option value="new-york">New York</option>
-            <option value="coconut">Sidney</option>
+            <option value="sidney">Sidney</option>
             <option value="mango">Berlin</option>
           </select>
         </div>
