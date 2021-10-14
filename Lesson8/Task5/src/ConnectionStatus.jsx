@@ -4,7 +4,7 @@ class ConnectionStatus extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        status: 'Online'
+        status: 'online'
     }
   }
 
@@ -23,7 +23,7 @@ this.setState({
 
 setOnlineStatus = () => {
     this.setState({
-        status: 'Online',
+        status: 'online',
     })
 }
 
