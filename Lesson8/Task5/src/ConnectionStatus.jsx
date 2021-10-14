@@ -6,8 +6,9 @@ class ConnectionStatus extends Component {
     this.state = {
       status: 'online',
     };
+    
   }
-
+  
   componentDidMount() {
     addEventListener('offline', this.setOfflineStatus);
     addEventListener('online', this.setOnlineStatus);
@@ -31,7 +32,7 @@ class ConnectionStatus extends Component {
   }
 
   render() {
-    if ('online') {
+    if (this.state.status === 'online') {
       return <div className="status">{this.state.status}</div>;
     }
     return <div className="status status_offline">{this.state.status}</div>;
