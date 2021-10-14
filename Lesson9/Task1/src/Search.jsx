@@ -4,24 +4,31 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value:'',
-    }
+      value: '',
+    };
   }
 
-  hendleChange = (event) =>{
-  this.setState({value: event.target.value})
-  }
+  hendleChange = event => {
+    this.setState({ value: event.target.value });
+  };
 
-  search = (event)=> {
-    event.preventDefault()
-    alert(`Search text: ${this.state.value}`)
-  }
+  search = event => {
+    event.preventDefault();
+    alert(`Search text: ${this.state.value}`);
+  };
 
   render() {
     return (
       <form className="search" onSubmit={this.search}>
-        <input type="text" onChange={this.hendleChange} value= {this.state.value} className="search__input" />
-        <button className="search__button" type="submit">Search</button>
+        <input
+          type="text"
+          onChange={this.hendleChange}
+          value={this.state.value}
+          className="search__input"
+        />
+        <button className="search__button" type="submit">
+          Search
+        </button>
       </form>
     );
   }
