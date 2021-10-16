@@ -18,7 +18,7 @@ class UserForm extends Component {
   render() {
     let usersList = this.props.users;
     const result = usersList
-      .filter(user => user.name.toLowerCase().includes(this.state.sorting.toLocaleLowerCase()))
+      .filter(user => user.name.toLowerCase().includes(this.state.sorting.toLowerCase()))
       .map(user => <User key={user.id} {...user} />);
     return (
       <div>
