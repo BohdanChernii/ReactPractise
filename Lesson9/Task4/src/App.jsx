@@ -1,5 +1,5 @@
 import React from 'react';
-import UserList from './UserList';
+import UsersList from './UsersList';
 
 const App = () => {
 const userList = [
@@ -11,6 +11,6 @@ const userList = [
   {id:5, name: 'Kristin', age: 19},
   {id:6, name: 'Ron', age: 3},
 ]  
-    return <UserList users={userList}/>;
+    return <UsersList users={userList}/>;
 }
 export default App;
