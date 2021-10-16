@@ -7,7 +7,6 @@ class UserForm extends Component {
 
   render() {
     return (
-      <div className="column">
         <form className="user-form">
           <input
             type="text"
@@ -24,7 +23,6 @@ class UserForm extends Component {
             onChange={this.handleChange}
           />
         </form>
-      </div>
     );
   }
 }
