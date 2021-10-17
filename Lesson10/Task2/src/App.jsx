@@ -25,7 +25,7 @@ class App extends Component {
       <div className="page">
           <div className="title">{`Hello, ${this.state.userData.firstName} ${this.state.userData.lastName}`}</div>
         <main className="content">
-          <ShoppingCart userData={this.state.userData} />
+          <ShoppingCart userName={this.state.userData.firstName} />
           <Profile userData={this.state.userData} handleChange={this.handleChange} />
         </main>
       </div>
