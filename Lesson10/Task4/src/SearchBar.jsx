@@ -2,7 +2,7 @@ import React from 'react';
  
 class  SearchBar extends React.Component {
  handleStockChange = e =>{
-     this.props.onInStockChange(e.target.value)
+     this.props.onInStockChange(e.target.checked)
  }
  handleFilterTextChange = e =>{
     this.props.onFilterTextChange(e.target.value)
@@ -12,7 +12,8 @@ class  SearchBar extends React.Component {
         <form action="">
             <input type="text" placeholder="Search..."value={this.props.filterText} onChange={this.handleFilterTextChange}/>
             <p>
-            <input type="checkbox" />
+            <input type="checkbox" checked={this.props.inStockOnly}
+            onChange={this.handleStockChange}/>
             {' '}
             Only show products in stock 
             </p> 
