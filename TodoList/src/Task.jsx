@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function Task({ done, text, onChange, onDelete, id }) {
   // const listItemClasses = classNames('list-item', { 'list-item_done': done });
   return (
-    <li className={done?'list-item list-item_done':'list-item'}>
+    <li className={done ? 'list-item list-item_done' : 'list-item'}>
       <input
         type="checkbox"
         className="list-item__checkbox"
